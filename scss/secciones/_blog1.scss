@@ -1,0 +1,9 @@
+/* Blog-1 */
+.blogUno {
+    @include flex (flex, space-between);
+    flex-direction: column;
+}
+
+.blogUno div p {
+    font-size: 1.5rem;
+}

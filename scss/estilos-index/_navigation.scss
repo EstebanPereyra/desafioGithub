@@ -1,0 +1,79 @@
+// Navegación
+
+.navegacion {
+    flex-basis: calc(50% - 3rem);
+        &__img {
+            display: none;
+        }
+
+        &__menu {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-content: center;
+            margin-top: 5%;}
+        
+        &__item, &__item--cerrar {
+            text-decoration: none;
+            color: white;
+            text-transform: uppercase;
+            font-size: 2rem;
+            font-weight: 400;
+            margin-right: 2rem;}
+        &__item::after {
+            content: "";
+            display: block;
+            width: 0%;
+            height: 0.5rem;
+            background-color:  rgba(255, 115, 0, 0.712);
+            transition-property: width;
+            transition-duration: 0.5;
+            transition-timing-function: ease-out;}
+        &__item:hover::after {
+            width: 100%;
+            transition: width 0.5s;}
+        &__item:hover {color: white;}    
+        &__item--cerrar {
+                display: none;
+            }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 968px) {
+
+    .navegacion {
+        &__img {
+            color: #ffffff;
+            font-size: 2rem;
+            text-align: center;
+            display: block;
+            padding: 2rem 0;
+            }
+        &__img:hover {
+            color: #ffffff;
+        }
+        &__item, &__item--cerrar {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom:2rem;
+            margin-left: 0;
+            margin-right: 0;
+            margin-top: 0;}
+        &__menu {
+            display: flex;
+            flex-direction: column;
+            max-height: 0;
+            transition: 1s;
+        }
+        &__item:hover, &__item--cerrar:hover {
+            color: white;
+            background-color: #050530;
+            border-radius: none;}
+        &__item--cerrar {
+            display: inline;}
+    }
+        #nav:target {
+            max-height: 800px;
+        }
+
+}

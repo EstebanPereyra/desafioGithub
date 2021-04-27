@@ -1,0 +1,18 @@
+/*Contacto */
+
+.contacto {
+    background-image: url(../img/contacto2-modificado.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 25rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+
+    &__parrafo {
+        font-size: 2rem;
+    }
+}

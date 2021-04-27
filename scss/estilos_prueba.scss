@@ -1,0 +1,48 @@
+// Estilos base
+@import "base/mixing.scss";
+@import "base/reset";
+@import "base/typo";
+// Componentes//
+
+@import "componentes/buttons";
+
+// Estilos index
+// Header
+@import "estilos-index/header";
+// Navegacion
+@import "estilos-index/navigation";
+
+// Secciones de index
+// Nosotros
+@import "estilos-index/nosotros";
+
+// Servicios
+@import "estilos-index/servicios";
+
+// Contacto
+@import "estilos-index/contacto";
+
+// Blog
+@import "estilos-index/blog";
+
+// Footer
+@import "estilos-index/footer";
+
+// Secciones
+// Servicios
+@import "secciones/servicios";
+
+// Nosotros
+@import "secciones/nosotros";
+
+// Contacto
+@import "secciones/contacto";
+
+// Blog
+@import "secciones/blog";
+
+// Blog-1
+@import "secciones/blog1";
+
+//Blog-2
+@import "secciones/blog2";

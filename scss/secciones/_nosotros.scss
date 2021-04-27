@@ -1,0 +1,13 @@
+/* Pagina nosotros */
+.nosotros {
+    @include flex (flex, space-between);
+    &__video {
+        flex-basis: 40%;
+        height: 40rem;
+    }
+    &__caja {
+        flex-basis: calc(60% - 3rem);
+        font-size: 1.5rem;
+        margin-top: 2rem;
+    }
+}

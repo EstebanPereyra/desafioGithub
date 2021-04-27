@@ -1,0 +1,35 @@
+@mixin listas($margin, $padding, $estilos) {
+    margin: $margin;
+    padding: $padding;
+    list-style-type: $estilos;}
+
+@mixin vinculos($decoration, $color, $padding, $tamano, $intesidad) {
+    text-decoration: $decoration;
+    color: $color;
+    padding: $padding;
+    font-size: $tamano;
+    font-weight: $intesidad;
+    }
+
+@mixin flex($display, $espaciado) {
+    display: $display;
+    justify-content: $espaciado;
+
+}
+
+@mixin tarjeta {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.5rem;
+    text-align: center;
+    border: 1px solid rgb(83, 82, 82);
+    border-radius: 2rem;
+    background-color: rgb(184, 179, 179);
+    padding: 2rem;
+    img {
+        max-width: 250px;
+        border-radius: 2rem;
+    }
+}

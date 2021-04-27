@@ -1,0 +1,70 @@
+/* header__titulo */
+@keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+ }
+
+.header {
+    @include flex (flex, space-between);
+    background-color: #050530;
+    margin-bottom: 1rem;
+    overflow: hidden;
+        &__contenido {
+            flex-basis: 50%;
+        }
+
+        &__titulo {text-decoration: none;
+            color: white;}
+
+        &__titulo h1 {
+            text-align: left;
+            font-size: 4.5rem;
+            margin-left: 2rem;
+            margin-bottom: 0;
+            margin-top: 0;}
+        
+        &__titulo h1:hover, &__titulo h1 span:hover {
+            color: white;}
+            
+        &__titulo h1 span {
+            font-weight: 900;}
+        
+        &__lema {
+            color: white;
+            font-size: 2rem;
+            margin-left: 2rem;
+            margin-bottom: 0;
+            margin-top: 0;}
+         &__titulo h1, &__lema {
+            animation-duration: 2s;
+            animation-name: aparecer;
+        }             
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 968px) {
+
+    /* Header */
+    
+    .header {
+        flex-direction: column;
+        &__titulo h1 {
+            font-size: 4.5rem;
+            text-align: center;
+            margin-left: 0;}
+        &__lema {
+            font-size: 2rem;
+            margin-left: 0rem;
+            text-align: center;}
+        }
+        }
+        
+// Carrusel
+
+.parrafoSlider {
+    font-size: 2rem;
+}

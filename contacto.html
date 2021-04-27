@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactános a través de esta página. Nos dedicamos a crear sitios Web para Empresas y Profesionales">
+    <meta name="keywords" content="Web PyMes Profesionales Abogados Contadores Escribanos Arquitectos Sitio Desarrollo">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/605289fcd0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/estilos_prueba.css">
+    <title>Contacto con WebPro</title>
+</head>
+
+<body>
+    <header class="contenedor">
+        <div class="header">
+            <div class="header__contenido">
+                <a href="index.html" class="header__titulo">
+                    <h1><span>Web</span>PRO</h1>
+                </a>
+                <p class="header__lema">Desarrollo Web para Profesionales y PyMES</p>
+            </div>
+            <div class="navegacion">
+                <a href="#nav" class="navegacion__img">
+                    <i class="fas fa-ellipsis-v"></i>
+                </a>
+                <nav id="nav" class="navegacion__menu">
+                    <a href="index.html" class="navegacion__item">Inicio</a>
+                    <a href="nosotros.html" class="navegacion__item">Nosotros</a>
+                    <a href="servicios.html" class="navegacion__item">Servicios</a>
+                    <a href="contacto.html" class="navegacion__item">Contacto</a>
+                    <a href="blog.html" class="navegacion__item">Blog</a>
+                    <a href="#" class="navegacion__item--cerrar">
+                        <i class="fas fa-times"></i>
+                    </a>
+                </nav>
+            </div>
+        </div>
+        </div>
+    </header>
+    <!--Fin header-->
+    <main class="contenedor contenedorContacto">
+        <h1 class="contenedorContacto__titulo centrarTexto margenesTitulos">Contáctenos</h1>
+        <div class="contenedorContacto__img">
+            <img src="img/contacto.jpg" alt="Imagen contacto">
+        </div>
+        <form action="" class="contenedorContacto__formulario">
+            <h2>Formulario de contacto</h2>
+            <fieldset class="contenedorContacto__fieldset">
+                <legend class="contenedorContacto__legend">Datos Personales</legend>
+
+                <label for="nombre" class="contenedorContacto__label">Nombre: </label>
+                <input type="text" id="nombre" placeholder="Ingrese su nombre completo"
+                    class="contenedorContacto__input">
+
+                <label for="telefono" class="contenedorContacto__label">Teléfono: </label>
+                <input type="number" id="telefono" placeholder="Ingrese su teléfono" class="contenedorContacto__input">
+
+                <label for="email" class="contenedorContacto__label">Correo electrónico: </label>
+                <input type="email" id="email" placeholder="Ingrese su e-mail" class="contenedorContacto__input">
+
+            </fieldset>
+
+            <fieldset class="contenedorContacto__fieldset">
+                <legend class="contenedorContacto__legend">Información sobre su Pyme o Profesión</legend>
+
+                <label class="contenedorContacto__label">¿Qué tipo de negocio tiene?</label><br><br>
+
+                <div>
+                    <label for="profesional" class="contenedorContacto__label">Profesional: </label>
+                    <input type="radio" id="profesional" name="tipo-negocio" value="profesional">
+
+                    <label for="pyme" class="contenedorContacto__label">PyME: </label>
+                    <input type="radio" id="pyme" name="tipo-negocio" value="pyme">
+                </div><br>
+
+                <label for="opciones" class="contenedorContacto__label">¿Qué tipo de sitio web requiere?: </label>
+                <select id="opciones" class="contenedorContacto__input contenedorContacto__input--select">
+                    <option value="" disabled selected>--Seleccione--</option>
+                    <option value="landingPage">Landing Page</option>
+                    <option value="sitioCorporativo">Sitio Corporativo</option>
+                    <option value="tiendaVirtual">Tienda Virtual</option>
+                    <option value="sitioPersonalizado">Sitio Personalizado</option>
+                </select><br><br>
+
+                <label for="informacion" class="contenedorContacto__label">Me gustaría recibir información relacionada a
+                    mi PyME o Profesión</label>
+                <input type="checkbox" name="informacion" id="informacion">
+            </fieldset>
+
+            <fieldset class="contenedorContacto__fieldset">
+                <legend class="contenedorContacto__legend">Contacto</legend>
+
+
+                <label for="mensaje" class="contenedorContacto__label">Escriba su consulta: </label><br>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10"
+                    class="contenedorContacto__txtarea"></textarea><br>
+
+                <label class="contenedorContacto__label">Como desea ser contactado: </label><br><br>
+
+                <div>
+                    <label for="telefono" class="contenedorContacto__label">Teléfono: </label>
+                    <input type="radio" id="telefono" name="contacto" value="telefono">
+
+                    <label for="correo" class="contenedorContacto__label">E-mail: </label>
+                    <input type="radio" id="correo" name="contacto" value="correo">
+                </div><br><br>
+
+                <label class="contenedorContacto__label">Si eligio teléfono, eliga fecha y hora en que se encontrará
+                    disponible: </label><br><br>
+                <label for="fecha" class="contenedorContacto__label">Fecha: </label>
+                <input type="date" class="contenedorContacto__input">
+
+                <label for="hora" class="contenedorContacto__label">Hora: </label>
+                <input type="time" min="09:00" max="19:00" class="contenedorContacto__input">
+            </fieldset>
+
+            <input type="submit" value="Enviar" class="botonSecundario contenedorContacto__btnFormulario">
+            <input type="reset" value="Resetear el formulario"
+                class="botonSecundario contenedorContacto__btnFormulario">
+        </form>
+        <!--Fin del formulario-->
+    </main>
+    <footer class="contenedor">
+        <div class="footer">
+
+            <div class="footer__socialmedia">
+                <ul class="footer__lista">
+                    <li>
+                        <a href=""><i class="footer__item fab fa-facebook-square"></i></a>
+                        <a href=""><i class="footer__item fab fa-instagram"></i></a>
+                        <a href=""><i class="footer__item fab fa-youtube"></i></a>
+                        <a href=""><i class="footer__item fab fa-linkedin"></i></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__copyright">
+                <p class="footer__txt">&copy Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+    <!--Fin del footer-->
+
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+        integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+    <!-- fin de boostratp -->
+
+</body>
+
+</html>

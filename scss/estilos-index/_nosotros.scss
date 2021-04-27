@@ -1,0 +1,25 @@
+// Nosotros
+.nosotros {
+    @include flex(flex, space-between);
+    text-align: center;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    &__caja {
+        flex-basis: calc(33% - 1rem);
+        text-align: center;
+        align-items: center;
+    }
+    &__img {
+        max-width: 20rem;
+        max-height: 20rem;
+    }
+    &__parrafo {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 968px) {
+    .nosotros {
+        flex-direction: column;
+        padding: 2rem;}
+    }    

@@ -1,0 +1,41 @@
+/* Blog */
+
+.blog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &__articulo {
+        @include flex(flex,space-between);
+        flex-direction: row;
+        margin-bottom: 3rem;
+    }
+    &__img {
+        flex-basis: 20%;
+    }
+    &__txt {
+        flex-basis: calc(80% - 3rem);
+        font-size: 5rem;
+    }
+    &__titulo {
+        margin: 0;
+    }
+    &__link {
+        text-decoration: none;
+        color: black;
+        font-weight: 400;
+        margin: 0;
+    }
+    &__parrafo {
+        font-size: 2rem;
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 968px) {
+    .blog {
+        padding: 2rem;
+        &__articulo {
+            flex-direction: column;
+        }
+    }
+}

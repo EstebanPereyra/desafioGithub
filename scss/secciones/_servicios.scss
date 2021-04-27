@@ -1,0 +1,69 @@
+.servicios {
+    @include flex(flex,space-between);
+    margin-bottom: 13rem;
+    margin-top: 5rem;
+    &__img {
+        background-image: url(../img/servicios.jpg);
+        background-size: cover;
+        width: 20rem;
+        height: 20rem;
+        flex-basis: 40%;
+    }
+    &__txt {
+        flex-basis: calc(60% - 4rem);
+        font-size: 2rem;
+        line-height: 3.5rem;
+    }
+    &__item {
+        list-style-type: circle;
+    }
+}
+
+table {
+    padding: 2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    font-size: 2rem;
+}
+
+.table-resposive {
+    display: none;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 968px) {
+
+    main.row {
+        max-width: 100%;
+    }
+
+    .servicios {
+    flex-direction: column;
+    margin-bottom: 2rem;
+    &__img {
+        display: none;
+    }
+    &__txt {
+        text-align: center;}    
+    }
+    
+    table {
+        display: none;
+    }
+
+    .table-resposive {
+        display: flex;
+        flex-direction: column;
+        & tr {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid black;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+    }
+
+    .table-resposive tr {
+        display: flex;
+        flex-direction: column;
+    }}
