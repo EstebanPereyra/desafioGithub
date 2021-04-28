@@ -27,6 +27,16 @@
             text-decoration: none;
             color: black;}       
         }
+        .blogprincipal__autor::after {
+            content: "";
+            display: block;
+            width: 20%;
+            height: 1rem;
+            background-color: rgba(255, 115, 0, 0.712);
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
         .blogprincipal__tituloResponsive {
             display: none;
         }}
@@ -57,6 +67,9 @@
         .blogprincipal__btn {
             margin: 0 auto;
             float: none;
+            }
+        .blogprincipal__autor::after {
+            display: none;
             }               
         }
 

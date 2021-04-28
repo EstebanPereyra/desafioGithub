@@ -307,6 +307,15 @@ ul {
     .blogprincipal__articulo .blogprincipal__titulo {
       text-decoration: none;
       color: black; }
+  .blogprincipal .blogprincipal__autor::after {
+    content: "";
+    display: block;
+    width: 20%;
+    height: 1rem;
+    background-color: rgba(255, 115, 0, 0.712);
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
   .blogprincipal .blogprincipal__tituloResponsive {
     display: none; }
 
@@ -329,7 +338,9 @@ ul {
     margin-bottom: 1.5rem; }
   .blogprincipal .blogprincipal__btn {
     margin: 0 auto;
-    float: none; } }
+    float: none; }
+  .blogprincipal .blogprincipal__autor::after {
+    display: none; } }
 
 /* Footer */
 .footer {
