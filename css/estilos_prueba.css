@@ -493,19 +493,31 @@ table {
     flex-direction: row;
     margin-bottom: 3rem; }
   .blog__img {
-    flex-basis: 20%; }
+    flex-basis: 40%; }
   .blog__txt {
-    flex-basis: calc(80% - 3rem);
+    flex-basis: calc(60% - 3rem);
     font-size: 5rem; }
   .blog__titulo {
     margin: 0; }
+    .blog__titulo:hover {
+      color: black; }
   .blog__link {
     text-decoration: none;
     color: black;
     font-weight: 400;
     margin: 0; }
+    .blog__link::after {
+      content: '';
+      display: block;
+      max-width: 50%;
+      height: 0.5rem;
+      background: rgba(255, 115, 0, 0.712);
+      border-radius: 0.5rem;
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem; }
   .blog__parrafo {
     font-size: 2rem;
+    line-height: 4rem;
     margin: 0; }
 
 @media only screen and (min-width: 320px) and (max-width: 968px) {
