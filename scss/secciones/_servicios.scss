@@ -1,6 +1,10 @@
+.seccionServicios {
+    margin-bottom: 3.5rem;
+}
+
 .servicios {
     @include flex(flex,space-between);
-    margin-bottom: 13rem;
+    margin-bottom: 7rem;
     margin-top: 5rem;
     &__img {
         background-image: url(../img/servicios.jpg);
@@ -28,8 +32,7 @@ table {
 }
 
 .table-resposive {
-    display: none;
-}
+    display: none;}
 
 @media only screen and (min-width: 320px) and (max-width: 968px) {
 

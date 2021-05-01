@@ -88,16 +88,24 @@ ul {
   color: white;
   text-decoration: none;
   text-align: center;
-  border: none; }
+  border: none;
+  transition: border-radius;
+  transition-duration: .5s; }
+  .btnPropio:hover, .botonSecundario:hover, .contenedorContacto__btnFormulario:hover {
+    background-color: rgba(255, 115, 0, 0.712);
+    border-radius: 1rem;
+    color: white; }
 
 .img-fluid {
   object-fit: contain; }
 
 .botonSecundario {
-  font-weight: 700; }
+  font-weight: 700;
+  transition-duration: .5s; }
   .botonSecundario:hover {
     text-decoration: none;
-    color: white; }
+    color: white;
+    border-radius: 1rem; }
 
 .contenedorContacto__btnFormulario {
   margin-bottom: 2rem;
@@ -368,10 +376,13 @@ ul {
   .footer__item {
     font-size: 5rem; } }
 
+.seccionServicios {
+  margin-bottom: 3.5rem; }
+
 .servicios {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 13rem;
+  margin-bottom: 7rem;
   margin-top: 5rem; }
   .servicios__img {
     background-image: url(../img/servicios.jpg);
@@ -511,7 +522,8 @@ table {
   .blog__titulo {
     margin: 0; }
     .blog__titulo:hover {
-      color: black; }
+      color: black;
+      font-weight: 900; }
   .blog__link {
     text-decoration: none;
     color: black;
@@ -526,6 +538,8 @@ table {
       border-radius: 0.5rem;
       margin-top: 1.5rem;
       margin-bottom: 1.5rem; }
+    .blog__link:hover {
+      color: black; }
   .blog__parrafo {
     font-size: 2rem;
     line-height: 4rem;
@@ -541,7 +555,9 @@ table {
 .blogUno {
   display: flex;
   justify-content: space-between;
-  flex-direction: column; }
+  flex-direction: column;
+  margin-top: 3rem;
+  margin-bottom: 2rem; }
 
 .blogUno div p {
   font-size: 1.5rem; }

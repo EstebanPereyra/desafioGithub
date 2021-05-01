@@ -27,7 +27,15 @@ ul {
     color: white;
     text-decoration: none;
     text-align: center;
-    border: none;}
+    border: none;
+    transition: border-radius;
+    transition-duration: .5s;
+        &:hover {
+            background-color: rgba(255, 115, 0, 0.712);
+            border-radius: 1rem;
+            color: white;
+
+        }}
 
 .img-fluid {
     object-fit: contain;
@@ -36,9 +44,11 @@ ul {
 .botonSecundario {
     @extend .btnPropio;
     font-weight: 700;
+    transition-duration: .5s;
     &:hover {
         text-decoration: none;
         color: white;
+        border-radius: 1rem;
     }
 }
 

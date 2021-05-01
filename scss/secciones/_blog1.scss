@@ -2,6 +2,8 @@
 .blogUno {
     @include flex (flex, space-between);
     flex-direction: column;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
 }
 
 .blogUno div p {
